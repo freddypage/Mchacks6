@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './patient-list.css';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 
 
@@ -50,12 +50,17 @@ class PatientList extends Component {
 
   render() {
     return (
-    	<div>
-      <header>
-      Patient List
+    	<Dropdown>
+        <Dropdown.Toggle variant="success" id="dropdown-basic">
+          Dropdown Button
+        </Dropdown.Toggle>
 
-      </header>
-      </div>
+        <Dropdown.Menu>
+          <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
 
     );
   }
